@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.15;
+  width: 100%;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #f5f5f5;
+  font-size: 100%; }
+
+a {
+  color: #407db5;
+  text-decoration: none; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.main {
+  background: #fff;
+  display: table;
+  overflow: hidden; }
+  @media screen and (min-width: 940px) {
+    .main {
+      display: block; } }
+
+.header {
+  border-bottom: 5px solid #f2f2f2;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border-top: 5px solid #000;
+  background: #fff;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2; }
+
+/*---------------Sub Main--------------------*/
+.sub-main {
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center; }
+  @media screen and (min-width: 940px) {
+    .sub-main {
+      padding-right: 2em;
+      padding-top: 95px;
+      width: 70%; } }
+
+.reproductor {
+  border: 1px solid #d7d7d7;
+  height: 440px; }
+
+/*---------------Nav--------------------*/
+.nav {
+  border-bottom: 10px solid #f2f2f2;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border-top: 5px solid #000;
+  background: #a3a7ab;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  text-align: center; }
+  .nav h4 {
+    margin-left: 25px;
+    display: inline-block; }
+
+.btn-section {
+  padding: 10px 25px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer; }
+
+.nav-section {
+  display: inline-block;
+  width: 30%; }
+
+.btn-section-selected {
+  background: #000; }
+
+/*---------------Posts--------------------*/
+.posts {
+  padding: 25px; }
+
+/*---------------About Post--------------------*/
+.hidden-post {
+  display: none; }
+
+.open-post {
+  display: block; }
+
+/*--------------Contact--------------------*/
+.contact {
+  border-bottom: 10px solid #f2f2f2;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border-top: 5px solid #000;
+  background: #a3a7ab;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  padding-top: 50px;
+  margin-top: 300px; }
+  .contact h4 {
+    margin-left: 25px;
+    display: inline-block; }
+  .contact a {
+    color: #fff; }
+
+.contact-list {
+  width: 40%;
+  display: inline-block; }
+  .contact-list img {
+    padding-right: 25px; }
+  .contact-list li {
+    margin: 25px;
+    list-style: none; }
+  .contact-list p {
+    padding: 25px 0 25px 70px; }
+
+.map-section {
+  display: inline-block; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  margin-bottom: 15px; }
+
+li,
+p {
+  font-size: .875em;
+  margin-bottom: 1em;
+  line-height: 1.5; }
+
+li {
+  line-height: 1;
+  margin-bottom: .5em; }
+
+hr {
+  margin: 48px 0;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #f9f8f8; }
+
+.location b {
+  display: block; }
+
+.intro-tile {
+  margin-bottom: 1em; }
+
+.logo {
+  display: block;
+  font-size: 50px;
+  font-weight: bold; }
+
+.site-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1; }
+
+.question-post {
+  width: 50%;
+  display: inline-block;
+  padding: 25px;
+  float: right; }
+
+.radio-info {
+  display: inline-block;
+  width: 50%;
+  padding: 25px; }
+
+.post-title {
+  background-color: #a3a7ab;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px; }
+
+.question-button {
+  background-color: #a3a7ab;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center; }
+
+form textarea {
+  height: 150px;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 15px; }
+form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 7px;
+  font-size: 15px; }
+
+.submit-button {
+  border: 0;
+  background-color: #a3a7ab;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: 0; }
+  .submit-button:hover {
+    opacity: 0.8; }
+
+.input-hide {
+  display: none; }
+
+.input-show {
+  display: block;
+  margin-left: 10px; }
+
+.list-form {
+  list-style: none;
+  font-size: 20px; }
+
+.boxes-form {
+  width: 10%;
+  height: 15px; }
+
+/*# sourceMappingURL=style.css.map */

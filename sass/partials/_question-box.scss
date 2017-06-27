@@ -1,0 +1,78 @@
+.question-post {
+  width: 50%;
+  display: inline-block;
+  padding: 25px;
+  float: right;
+}
+
+.radio-info {
+  display: inline-block;
+  width: 50%;
+  padding: 25px;
+}
+
+.post-title {
+  background-color: #a3a7ab;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.question-button {
+  background-color: #a3a7ab;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  
+  textarea {
+      height: 150px;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      font-size: 15px;
+  }
+
+  input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 7px;
+      font-size: 15px;
+  }
+}
+
+.submit-button {
+  border: 0;
+  background-color: #a3a7ab;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+      opacity: 0.8;
+  }
+}
+
+.input-hide {
+  display: none;
+}
+
+.input-show {
+  display: block;
+  margin-left: 10px;
+}
+
+.list-form {
+  list-style: none;
+  font-size: 20px;
+}
+
+.boxes-form {
+  width: 10%;
+  height: 15px;
+}
