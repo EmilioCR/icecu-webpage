@@ -26,6 +26,25 @@ var domIsReady = (function(domIsReady) {
 
 (function(document, window, domIsReady, undefined) {
   domIsReady(function() {
+     var questionBox = document.getElementById('question-box');
+     var questionTitle = document.getElementById('question-title');
+
+     questionTitle.addEventListener('click', function() {
+      if (questionBox.classList) {
+        questionBox.classList.toggle('is-open');
+        //phoneRequired.setAttribute('required', 'yes');
+      } else {
+        var classes = questionBox.className.split(' ');
+        var existingIndex = classes.indexOf('is-open');
+
+        if (existingIndex >= 0)
+        classes.splice(existingIndex, 1);
+        else
+        classes.push('is-open');
+
+        questionBox.className = classes.join(' ');
+      }
+    });
 
     var boxPhone = document.getElementById('box-phone');
     var inputPhone = document.getElementById('input-phone');
@@ -96,46 +115,14 @@ var domIsReady = (function(domIsReady) {
       }
     });
 
-    var btnAbout = document.getElementById('btn-about-section');
-    var btnRadio = document.getElementById('btn-radio-section');
-    var btnHistory = document.getElementById('btn-history-section');
 
-    var aboutPost = document.getElementById('about-post');
-    var radioPost = document.getElementById('radio-post');
-    var historyPost = document.getElementById('history-post');
+    var logo = document.getElementById('logo');
 
-    btnAbout.addEventListener('click', function () {
-      if (btnAbout.classList) {
-        btnAbout.classList.toggle('btn-section-selected')
-        aboutPost.classList.toggle('open-post');
-        radioPost.className = 'hidden-post';
-        historyPost.className = 'hidden-post';
-        btnRadio.className = 'btn-section';
-        btnHistory.className = 'btn-section';
-      }
-    })
-
-    btnRadio.addEventListener('click', function () {
-      if (btnRadio.classList) {
-        btnRadio.classList.toggle('btn-section-selected')
-        radioPost.classList.toggle('open-post');
-        aboutPost.className = 'hidden-post';
-        historyPost.className = 'hidden-post';
-        btnAbout.className = 'btn-section';
-        btnHistory.className = 'btn-section';
-      }
-    })
-
-    btnHistory.addEventListener('click', function () {
-      if (btnHistory.classList) {
-        btnHistory.classList.toggle('btn-section-selected')
-        historyPost.classList.toggle('open-post');
-        aboutPost.className = 'hidden-post';
-        radioPost.className = 'hidden-post';
-        btnAbout.className = 'btn-section';
-        btnRadio.className = 'btn-section';
-      }
-    })
+	window.addEventListener('load', function () {
+		logo.className = 'logo-section';
+	})
 
   });
 })(document, window, domIsReady);
+
+

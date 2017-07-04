@@ -1,25 +1,37 @@
 .question-post {
-  width: 50%;
-  display: inline-block;
-  padding: 25px;
-  float: right;
+  border: 1px solid #e0dfdf;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #dfdfdf;
+  background: #f2f2f2;
+  width: 30%;
+  z-index: 3;
 }
 
-.radio-info {
-  display: inline-block;
-  width: 50%;
-  padding: 25px;
-}
-
-.post-title {
-  background-color: #a3a7ab;
+.question-title {
+  background-color: #d49000;
   color: #fff;
+  cursor: pointer;
   font-size: 20px;
   padding: 15px;
 }
 
+.question-text {
+  display: none;
+  overflow: hidden;
+  padding: 0 40px 15px;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.is-open .question-text {
+  display: block;
+  opacity: 1;
+}
+
 .question-button {
-  background-color: #a3a7ab;
+  background-color: #d49000;
   padding: 20px;
   cursor: pointer;
   color: #fff;
@@ -27,6 +39,7 @@
 }
 
 form {
+  padding: 25px;
   
   textarea {
       height: 150px;
@@ -46,7 +59,7 @@ form {
 
 .submit-button {
   border: 0;
-  background-color: #a3a7ab;
+  background-color: #d49000;
   color: #fff;
   margin-top: 10px;
   font-size: 18px;
@@ -69,7 +82,6 @@ form {
 
 .list-form {
   list-style: none;
-  font-size: 20px;
 }
 
 .boxes-form {
