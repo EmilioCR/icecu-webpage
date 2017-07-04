@@ -1,159 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Instituto Centroamericano de Extensi&oacute;n de la Cultura - ICECU</title>
     <meta name="description" content="Sitio web del Instituto Centroamericano de Extensión de la Cultura (ICECU); escuche los episodios del rograma de radio Oigamos la respuesta.">
 
-    <!-- OG Facebook -->
-    <meta property="og:title" content="Instituto Centroamericano de Extensi&oacute;n de la Cultura - ICECU" />
-    <meta property="og:description" content="Escuche los episodios del programa Oigamos la respuesta, &oacute; envienos sus preguntas." />
-    <meta property="og:site_name" content="ICECU.org" />
-    <meta property="og:url" content="http://www.icecu.org/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://icecu.org/img/icecu-oigamos-la-respuesta-fb.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700" rel="stylesheet">
-    <script ></script>
 </head>
 <body>
-<div class="header">
-    <div class="wrapper">
-        <img src="img/icecu-logo.png" class="logo" alt="">
-    </div>
-</div>
+	<div class="header">
+		<div class="wrapper">
+			<ul>
+				<li class="list-menu"><a href="index.html">Inicio</a></li>
+				<li class="list-menu"><a href="programa.html">Oigamos la Respuesta</a></li>
+				<li class="list-menu"><a href="contact.html">Queremos escuchar sus preguntas</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="icecu-inicio">
+		<div class="background-opacity">
+		</div>
+		<div class="logo-hide" id="logo" >
+			<img src="img/icecu-logo.png" alt="ICECU Logo">
+			<h3>Bienvenidos a la página oficial</h3>
+			<h2>del Instituto Centroamericano <br> de extensión de la Cultura</h2>
+		</div>
+	</div>
 
-<div class="wrapper main">
-
-    <!--Sub Main-->
-    <div class="sub-main">
-        <div class="post-open" id="oigamos-post">
-            <img src="img/radio-logo.jpg" alt="">
-
-            <iframe class="reproductor" src="http://www.ivoox.com/player_es_channel_192663_1.html" width="100%" frameborder="0" allowfullscreen="0" scrolling="no" ></iframe>
-        </div>
-    </div>
-
-    <div class="nav">
-        <div class="wrapper">
-            <div class="nav-section">
-                <span class="about-us btn-section" id="btn-about-section"></span>
-                <h4>Acerca de nosotros</h4>
-            </div> 
-            <div class="nav-section">
-                <span class="radio-program btn-section btn-section-selected" id="btn-radio-section"></span>
-                <h4>Programa de Radio</h4>
-            </div>
-            <div class="nav-section">
-                <span class="history btn-section" id="btn-history-section"></span>
-                <h4>Historia</h4>
-            </div>
-        </div>
-    </div>
-    <div class="posts">
-        <div class="about-post hidden-post" id="about-post">
-            <h2 class="post-title">Quiénes somos.</h2>
-            <p>El Instituto Centroamericano de Extensión de la Cultura (ICECU) es una 
-                institución de bien público y sin fines de lucro, creada por la Asamblea
-                Legislativa de Costa Rica en 1963 por la ley 3215. La idea del ICECU fue gestada por el Dr. Roderich Thun y su 
-                esposa doña Manuela Tattenbach, como un programa de educación inicialmente para los campesinos de 
-                Centroamérica, basado en el respeto a las necesidades e intereses de cada persona. Hoy día son muchas las personas que 
-                desde distintas partes del mundo se benefician del trabajo del ICECU.</p>
-        </div>
-        <div class="radio-post" id="radio-post">
-            <div class="radio-info">
-                <h2 class="post-title" id="question-title">El programa de radio</h2>
-                <p>En esos de 1960 el analfabetismo en Centroamérica era de más del 60% de la población, por eso en el año de 1964 nuestros fundadores crearon un 
-                    programa de radio de preguntas y respuestas donde los oyentes son los que proponen los temas.. En aquel momento el programa de radio se llamó “
-                    Escuela Para Todos” y la primera emisora en transmitirlo fue Radio 
-                    Monumental de Costa Rica.
-                    El compositor de la letra de la canción que suena al comienzo y al final de cada programa 
-                    fue el doctor Thun; mientras que la música que al día de hoy se escucha viene de una canción mexicana que se llama “Llegó el lechero”.
-                    Cinco días después de haber comenzado el programa radial, un señor de 
-                    apellido Jiménez, quien escuchó el primer programa, que era una conferencia sobre la Pantera Negra, 
-                    nos escribía desde Dulce Nombre de Coronado, Costa Rica, para preguntarnos qué sabíamos acerca del león tigre.
-                    En los años siguientes se contrataron transmisiones con estaciones de radio en cada país centroamericano.
-                    Gracias a estas emisoras, se empezó a recibir correspondencia de estos países, y se grabaron programas de radio con 
-                    preguntas que venían principalmente de Centroamérica y México. Desde un principio el doctor Thun dijo muy claramente que el 
-                    programa se hacía no para enseñar lo que a él le parecía importante, sino lo que la gente quisiera saber.
-                </p>
-            </div>
-
-            <div class="question-post">
-
-                <h2 class="post-title" id="question-title">Queremos escuchar sus preguntas.</h2>
-                <div class="question-text">
-                    <form action="send.php" method="post" name="contact" id="contact">
+	<div class="question-post" id="question-box">
+        <h2 class="question-title" id="question-title">Queremos escuchar sus preguntas.</h2>
+        <div class="question-text">
+            <form action="send.php" method="post" name="contact" id="contact">
+            <ul class="list-form">
+                <li><label for="input-name">Nombre:</label> </li>
+                <li><input type="text" name="input-name" id="input-name" placeholder="Nombre Completo" required=""></li>
+                <li>Formas de recibir su respuesta: <br><br>
                     <ul class="list-form">
-                        <li><label for="input-name">Nombre:</label> </li>
-                        <li><input type="text" name="input-name" id="input-name" placeholder="Nombre Completo" required=""></li>
-                        <li>Formas de recibir su respuesta: <br><br>
-                            <ul class="list-form">
-                                <li><label for="box-phone">Tel&#233;fono:</label> <input type="checkbox" name="box-phone" id="box-phone" class="boxes-form"></  li>
-                                <li class="input-hide" id="input-phone"><input type="number" name="input-phone" placeholder="Tel&#233;fono" id="phone-required" ></li>
-    
-                                <li><label for="box-mail">Correo electr&oacute;nico:</label> <input type="checkbox" name="box-mail" id="box-mail" class="boxes-form"></li>
-                                <li class="input-hide" id="input-mail"><input type="mail" name="input-mail" placeholder="Correo electr&oacute;nico" id="mail-required"></li>
-    
-                                <li><label for="box-letter">Carta:</label> <input type="checkbox" name="box-letter" id="box-letter" class="boxes-form"></li>
-                                <li class="input-hide" id="input-letter"><input type="text" name="input-letter" placeholder="Dirección" id="letter-required"></ li>
-                            </ul>
-                        </li>
-                        <li><label for="input-message">Su pregunta...</label> <textarea name="input-message" id="input-message"  required=""></textarea></li>
+                        <li><label for="box-phone">Tel&#233;fono:</label> <input type="checkbox" name="box-phone" id="box-phone" class="boxes-form"></li>
+                        <li class="input-hide" id="input-phone"><input type="number" name="input-phone" placeholder="Tel&#233;fono" id="phone-required"></li>
+
+                        <li><label for="box-mail">Correo electr&oacute;nico:</label> <input type="checkbox" name="box-mail" id="box-mail" class="boxes-form"></li>
+                        <li class="input-hide" id="input-mail"><input type="mail" name="input-mail" placeholder="Correo electr&oacute;nico" id="mail-required"></li>
+
+                        <li><label for="box-letter">Carta:</label> <input type="checkbox" name="box-letter" id="box-letter" class="boxes-form"></li>
+                        <li class="input-hide" id="input-letter"><input type="text" name="input-letter" placeholder="Dirección" id="letter-required"></li>
                     </ul>
-                    <input type="submit" class="submit-button" value="Enviar Pregunta">
-                    </form>
-                </div>
-            </div>
+                </li>
+                <li><label for="input-message">Su pregunta...</label> <textarea name="input-message" id="input-message"  required=""></textarea></li>
+            </ul>
+            <input type="submit" class="submit-button" value="Enviar Pregunta">
+            </form>
         </div>
-        <div class="history-post hidden-post" id="history-post">
-            <h2 class="post-title">Historia.</h2>
+       </div>
 
-            <p>En los años de 1960 nuestros fundadores, el Dr. Roderich Thun y su esposa doña Manuela Tattenbach,se fueron a vivir a una finca en Cartago, Costa Rica. Con el tiempo, aprendieron que las personas, como los trabajadores de su finca, tenían grandes preguntas sobre el mundo que los rodeaba, y muchas veces no contaban con las oportunidades para encontrar 
-                respuestas en un lenguaje sencillo y comprensible para cada una de sus dudas. 
-                Fue así que nació la idea de fundar el Instituto Centroamericano de Extensión de la Cultura, con el propósito de ofrecer explicaciones sencillas a las preguntas que pudieran tener las personas, respetando siempre la dignidad de cada ser humano.
-            </p>
-        </div>
+	<div class="wrapper">
 
-        
-    </div>
+		<h1>“Comprender lo comprensible <br> es un Derecho Humano.” </h1>
+		<div class="about-section">
 
-    <div class="contact">
-        <div class="wrapper">
-            <div class="contact-list">
-                <h4>Contacto</h4>
-                <ul>
-                    <li><img src="img/location-logo.png" alt="">Ubicación:
-                        <p>Del Salon de Patines Music 200 metros al este, 100metros al norte y 
-                        75metros al este. San Pedro, San  José, Costa Rica.</p>
-                    </li>
-                    <li><img src="img/phone-logo.png" alt="">Número de teléfono:
-                        <p>(506) 2225-5238 ó (506) 2225-5354</p>
-                    </li>
-                    <li><img src="img/mail-logo.png" alt="">Email:
-                        <p>icecu@icecu.org </p>
-                    </li>
-                    <li><a href="https://www.facebook.com/oigamoslarespuesta/"><img src="img/facebook-logo.png" alt="">Siguenos en Facebook</a></li>
-                </ul>
-            </div>
-            <div class="map-section">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.997678189395!2d-84.0556427848272!3d9.934150376889441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e386b5462ee1%3A0x1563d13aa840f625!2sFundacion+Escuela+Para+Todos!5e0!3m2!1ses!2ses!4v1498586014332" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>     
-        </div>
-    </div>
+			<h2>¿Quienes somos?</h2>
 
-</div>
-<script type="text/javascript" src="js/script.js"></script>
+			<p>El artículo 4 de la Ley 3215 expresa que la función del Instituto Centroamericano de Extensión de la Cultura (ICECU) es "difundir la cultura general a los adolescentes y adultos de todas las capas sociales, pero especialmente de aquellos que hayan tenido poco o ninguna posibilidad de beneficiarse con los sistemas regulares de educación, conforme a los conceptos generales enunciados por la UNESCO".</p>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-   ga('create', 'UA-88586843-1', 'auto');
-   ga('send', 'pageview');
-</script>
+			<p>El Instituto Centroamericano de Extensión de la Cultura es una institución de bien público sin fines de lucro, creada por la Asamblea Legislativa de Costa Rica en 1963 por la ley 3215. La idea del ICECU fue gestada por el Dr. Roderich Thun, como un programa de educación para los campesinos de Centroamérica, basado en el respeto a las necesidades en intereses que cada persona manifiesta.</p>
+			<p>El ICECU recibe cientos de cartas, llamadas y correos electrónicos cada semana procedentes de Centroamérica y en menor medida, de otras regiones del hemisferio. El objetivo del ICECU es difundir la cultura general a los adolescentes y adultos de todas las capas sociales, pero especilamente a aquellos que hayan tenido poca o ninguna posibilidad de beneficiarse con los sistemas regulares de educación.</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<img src="img/icecu-logo-footer.png" alt="ICECU Logo">
+			<div class="info-footer">
+				<p>(506)2225-5238 <br> (506)2225-5354</p>
+				<a href="icecu@icecu.org">icecu@icecu.org</a>
+				<p>Del Salon de Patines Music 200 metros al <br> este, 100metros al norte y 75metros al <br> este. San Pedro, San José, Costa Rica.</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>
