@@ -1,0 +1,25 @@
+.background-programa {
+	background-image: url("../img/background-programa.png");
+	height: 75%;
+
+	.title-section {
+    	top: 0;
+    }
+}
+
+.about-program {
+    margin: 100px 100px 200px;
+
+    p {
+        margin: 50px 0 25px;
+    }
+
+    a {
+    	color: #000;
+    	text-decoration: underline;
+    }
+}
+
+.info-program {
+	margin-bottom: 50px;
+}

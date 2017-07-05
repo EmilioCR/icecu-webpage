@@ -56,12 +56,19 @@ a {
     list-style: none;
     display: inline-block;
     margin: 30px 0 30px 30px;
+
+    a:hover {
+        color: #eaeaea;
+    }
 }
 
 // ------------- Icecu Logo ---------------------------------------------
 
-.icecu-inicio {
+.background-icecu {
     background-image: url("../img/background-inicio.png");
+}
+
+.backgrounds-parallax {
     width: 100%;
     height: 100%;
     background-attachment: fixed;
@@ -78,19 +85,20 @@ a {
     opacity: 0.95;
 }
 
-.logo-section {
+.title-section {
     text-align: left;
     display: inline-block;
     position: absolute;
     top: 25%;
     left: 35%;
     font-family: $font-family-base;
-    transition: opacity 3s;
-    
-
 }
 
-.logo-hide {
+.title-opacity-show {
+    transition: opacity 3s;
+}
+
+.title-opacity-hide {
     opacity: 0;
 }
 

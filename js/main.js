@@ -119,7 +119,8 @@ var domIsReady = (function(domIsReady) {
     var logo = document.getElementById('logo');
 
 	window.addEventListener('load', function () {
-		logo.className = 'logo-section';
+		logo.classList.add('title-opacity-show', 'title-section');
+    logo.classList.remove('title-opacity-hide')
 	})
 
   });

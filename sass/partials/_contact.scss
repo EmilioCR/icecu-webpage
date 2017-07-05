@@ -1,0 +1,33 @@
+.background-contact {
+    background-image: url("../img/background-contact.png");
+    height: 75%;
+
+    .title-section {
+    	width: 100%;
+    	right: 35%;
+    	left: 0;
+    }
+}
+
+.info-question {
+	background-color: #9b9a30;
+	color: #fff;
+	padding: 50px;
+	width: 50%;
+	display: inline-block;
+	line-height: 10px;
+
+	p {
+		margin-bottom: 30px;
+	}
+}
+
+.info-contact {
+	display: inline-block;
+	color: #005F85;
+	padding: 50px;
+	
+	a {
+		color: #005F85;
+	}
+}
