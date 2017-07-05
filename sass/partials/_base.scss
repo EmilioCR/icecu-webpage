@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: $font-family-base; // 1
+    font-family: helvetica, $font-family-base; // 1
     line-height: 1.15; // 2
     width: 100%;
     height: 100%;
@@ -91,7 +91,7 @@ a {
     position: absolute;
     top: 25%;
     left: 35%;
-    font-family: $font-family-base;
+    font-family: helvetica, $font-family-base;
 }
 
 .title-opacity-show {
@@ -114,16 +114,30 @@ a {
 
 // ------------- Footer ---------------------------------------------
 
-
 .footer {
     background-color: #3f4359;
     width: 100%;
-    padding: 30px;
+    height: 35%;
+    position: relative;
+}
+
+.footer-container {
+    position: relative;
+}
+
+.footer-logo {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
 }
 
 .info-footer {
     color: #fff;
     margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
 
     p {
         margin: 25px 0 25px 0;
