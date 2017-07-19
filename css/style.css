@@ -253,4 +253,69 @@ a {
   .info-contact a {
     color: #005F85; }
 
+@media only screen and (max-width: 500px) {
+  .list-menu {
+    list-style: none;
+    display: block;
+    padding: 20px 20px;
+    margin: 0;
+    text-align: center; }
+
+  .title-section {
+    top: 5%;
+    left: 0;
+    margin: 50px 15px; }
+    .title-section h3 {
+      font-size: 20px; }
+    .title-section h2 {
+      font-size: 23px; }
+
+  h1 {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 23px; }
+
+  .about-section {
+    margin: 50px 15px 50px 15px; }
+    .about-section h2 {
+      font-size: 35px; }
+
+  .footer {
+    height: initial; }
+
+  .footer-logo {
+    position: initial; }
+
+  .info-footer {
+    position: initial;
+    margin-left: 30px; }
+
+  .info-footer p {
+    margin: 25px 0 25px 0;
+    font-size: 14px; }
+
+  .question-title {
+    display: none; }
+
+  .background-programa .title-section img {
+    width: 100%; }
+
+  .about-program {
+    margin: 50px 15px 50px 15px; }
+
+  .background-contact h1 {
+    color: #005F85;
+    font-size: 30px;
+    position: initial;
+    margin: 45px 10px; }
+
+  .background-contact .title-section {
+    margin: 80px 0; }
+
+  .info-question {
+    width: 100%; }
+
+  .info-contact ul {
+    margin: 15px 0 30px 0; } }
+
 /*# sourceMappingURL=style.css.map */
